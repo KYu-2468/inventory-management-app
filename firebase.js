@@ -20,10 +20,6 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 if (typeof window !== "undefined") {
-	isSupported().then((supported) => {
-		if (supported) {
-			const analytics = getAnalytics(app);
-		}
-	});
+	const analytics = getAnalytics(app);
 }
 export const firestore = getFirestore(app);
