@@ -191,7 +191,9 @@ export default function Home() {
 							/>
 							<PhotoCamera />
 						</Button>
-						<WebcamCapture onCapture={handleCapture} />
+						{!imagePreview && (
+							<WebcamCapture onCapture={handleCapture} />
+						)}
 						{imagePreview && (
 							<Box
 								component="img"
