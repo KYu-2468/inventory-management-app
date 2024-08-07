@@ -144,7 +144,6 @@ export default function Home() {
 	return (
 		<Box
 			width="100vw"
-			height="100vh"
 			display="flex"
 			justifyContent="flex-start"
 			flexDirection="column"
@@ -256,7 +255,6 @@ export default function Home() {
 					bgcolor="white"
 					borderRadius={2}
 					boxShadow={1}
-					maxHeight="60vh"
 					overflow="auto"
 					display="flex"
 					flexWrap="wrap"
